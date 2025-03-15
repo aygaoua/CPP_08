@@ -1,5 +1,9 @@
 #include "easyfind.hpp"
 
+void printo(int n) {
+    std::cout << n << " ";
+}
+
 int main() {
     std::vector<int> vec;
 
@@ -8,7 +12,8 @@ int main() {
     vec.push_back(3);
     vec.push_back(4);
     vec.push_back(5);
-
+    std::for_each(vec.begin(), vec.end(), printo);
+    std::cout << std::endl;
     try {
         std::vector<int>::iterator it = easyfind(vec, 5);
         std::cout << "Element found in the index: " << std::distance(vec.begin(), it) << std::endl;

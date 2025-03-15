@@ -21,7 +21,7 @@ Span&		    Span::operator =(const Span& b) {
     return (*this);
 }
 
-Span::~Span     (){
+Span::~Span     () {
 
 }
 
