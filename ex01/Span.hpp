@@ -25,8 +25,8 @@ class Span {
 	/*-----------------------------------------------------------------------*/
 
 	/*----------------------- public template functions -----------------------*/
-		template <typename InputIterator>
-		void addNumbers(InputIterator begin, InputIterator end) {
+		template <typename It>
+		void addNumbers(It begin, It end) {
 			if (std::distance(begin, end) + elmnts.size() > N) {
 				throw std::runtime_error("maximum capacity reach when this operation is done!");
 			}
