@@ -8,13 +8,13 @@ int main()
         MutantStack<int> mstack;
         mstack.push(5);
         mstack.push(17);
-        std::cout <<  "              " << mstack.top() << std::endl;
+        std::cout <<  "top:          " << mstack.top() << std::endl;
         mstack.pop();
-        std::cout <<  "              " << mstack.size() << std::endl;
+        std::cout <<  "size:         " << mstack.size() << std::endl;
         mstack.push(3);
         mstack.push(5);
         mstack.push(737);
-        //[...]
+        mstack.push(1337);
         mstack.push(0);
         MutantStack<int>::iterator it = mstack.begin();
         MutantStack<int>::iterator ite = mstack.end();
@@ -33,13 +33,13 @@ int main()
         std::list<int> myList;
         myList.push_back(5);
         myList.push_back(17);
-        std::cout << "              " << myList.back() << std::endl;
+        std::cout <<  "top:          " << myList.back() << std::endl;
         myList.pop_back();
-        std::cout << "              " << myList.size() << std::endl;
+        std::cout <<  "size:         " << myList.size() << std::endl;
         myList.push_back(3);
         myList.push_back(5);
         myList.push_back(737);
-        //[...]
+        myList.push_back(1337);
         myList.push_back(0);
         std::list<int>::iterator it = myList.begin();
         std::list<int>::iterator ite = myList.end();

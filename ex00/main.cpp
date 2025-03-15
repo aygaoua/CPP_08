@@ -10,15 +10,15 @@ int main() {
     vec.push_back(5);
 
     try {
-        std::vector<int>::iterator it = easyfind(vec, 3);
-        std::cout << "Element found at index: " << std::distance(vec.begin(), it) << std::endl;
+        std::vector<int>::iterator it = easyfind(vec, 5);
+        std::cout << "Element found in the index: " << std::distance(vec.begin(), it) << std::endl;
     } catch (const std::runtime_error& e) {
         std::cout << e.what() << std::endl;
     }
 
     try {
-        std::vector<int>::iterator it = easyfind(vec, 6);
-        std::cout << "Element found at index: " << std::distance(vec.begin(), it) << std::endl;
+        std::vector<int>::iterator it = easyfind(vec, 1);
+        std::cout << "Element found in the index: " << std::distance(vec.begin(), it) << std::endl;
     } catch (const std::runtime_error& e) {
         std::cout << e.what() << std::endl;
     }

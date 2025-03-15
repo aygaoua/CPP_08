@@ -1,10 +1,10 @@
 #include "Span.hpp"
 
-Span::Span(): N(0){
+Span::Span      (): N(0){
 
 }
 
-Span::Span(unsigned int N_p): N(N_p) {
+Span::Span      (unsigned int N_p): N(N_p) {
 
 }
 
@@ -12,7 +12,7 @@ Span::Span		(Span const & src): N(src.N), elmnts(src.elmnts) {
 
 }
 
-Span&		Span::operator =(const Span& b) {
+Span&		    Span::operator =(const Span& b) {
 
     if (this == &b)
         return (*this);
@@ -21,25 +21,25 @@ Span&		Span::operator =(const Span& b) {
     return (*this);
 }
 
-Span::~Span(){
+Span::~Span     (){
 
 }
 
-void Span::addNumber(int elmnt) {
+void            Span::addNumber(int elmnt) {
 
     if (elmnts.size() == N)
     {
-        throw std::runtime_error("rech the max number of numbers you can hold !!");
+        throw std::runtime_error("reach the max number of numbers you can hold !!");
     }
     elmnts.push_back(elmnt);
 }
 
-int Span::shortestSpan() {
+int             Span::shortestSpan() {
     int dis = INT_MAX;
     std::vector<int> tmp(elmnts);
 
     if (tmp.size() <= 1)
-        throw std::runtime_error("No Span to calulate !!");
+        throw std::runtime_error("No Span to calculate!!");
     std::sort(tmp.begin(),tmp.end());
     for (std::vector<int>::iterator it = tmp.begin(); it != tmp.end(); ++it)
     {
@@ -55,10 +55,10 @@ int Span::shortestSpan() {
     return (dis);
 }
 
-int Span::longestSpan() {
+int             Span::longestSpan() {
 
     if (elmnts.size() <= 1)
-        throw std::runtime_error("No Span to calulate !!");
+        throw std::runtime_error("No Span to calculate!!");
     int max_nb = INT_MIN;
     int min_nb = INT_MAX;
     std::vector<int>::iterator max_it = std::max_element(elmnts.begin(), elmnts.end());
