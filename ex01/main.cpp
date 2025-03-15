@@ -22,6 +22,7 @@ int main()
         sp.addNumber(11);
         std::cout << sp.shortestSpan() << std::endl;
         std::cout << sp.longestSpan() << std::endl;
+        sp.addNumber(8);
     }
     catch (std::exception &e){
         std::cout << e.what() << std::endl;

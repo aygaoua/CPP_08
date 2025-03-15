@@ -70,10 +70,3 @@ int Span::longestSpan() {
 }
 
 
-template <typename InputIterator>
-void Span::addNumbers(InputIterator begin, InputIterator end) {
-    if (std::distance(begin, end) + elmnts.size() > N) {
-        throw std::runtime_error("maximum capacity reach when this operation is done!");
-    }
-    elmnts.insert(elmnts.end(), begin, end);
-}
