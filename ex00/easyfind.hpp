@@ -1,4 +1,6 @@
-#pragma once
+#ifndef EASYFIND_HPP
+#define EASYFIND_HPP
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -12,3 +14,5 @@ typename T::iterator easyfind(T& container, int to_find) {
         throw std::runtime_error("No occurrence found!");
     }
 }
+
+#endif

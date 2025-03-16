@@ -1,4 +1,5 @@
-#pragma once 
+#ifndef SPAN_HPP
+#define SPAN_HPP
 
 #include <iostream>
 #include <string>
@@ -34,3 +35,5 @@ class Span {
 		}
 	/*-----------------------------------------------------------------------*/
 };
+
+#endif
