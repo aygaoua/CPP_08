@@ -19,9 +19,9 @@ class Span {
 	/*-----------------------------------------------------------------------*/
 
 	/*----------------------- public member functions -----------------------*/
-		void 		addNumber(int elmnt);
-		int 		shortestSpan();
-		int 		longestSpan();
+		void		addNumber(int elmnt);
+		int			shortestSpan();
+		int			longestSpan();
 	/*-----------------------------------------------------------------------*/
 
 	/*----------------------- public template functions -----------------------*/
